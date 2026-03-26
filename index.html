@@ -303,13 +303,11 @@ Always be encouraging, realistic, and safety-conscious. Keep responses concise b
                     messageInput.disabled = false;
                     sendBtn.disabled = false;
                     chatBox.innerHTML = '<div class="empty-state"><p>✅ API Connected!</p><p style="font-size: 13px; color: #bbb;">Ready to chat with your coach</p></div>';
-                } catch (error) {
-                    showError('Invalid API key format');
-                }
-            } else {
-                messageInput.disabled = true;
-                sendBtn.disabled = true;
-            }
+                    console.log('API Key accepted');
+                }catch (error) {
+                    console.error('API Error:', error);
+                        showError('API connection failed: ' + error.message);
+}
         });
 
         // Send message
