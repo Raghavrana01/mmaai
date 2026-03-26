@@ -10,7 +10,7 @@ Original file is located at
 !pip install google-generativeai
 
 import os
-os.environ["GOOGLE_API_KEY"] = "AIzaSyDJmk9Ici8QEoyUpOdb1UrZ9Zd02TIF2WE"
+os.environ["GOOGLE_API_KEY"] = "made this mistake once not again"
 
 import os
 import google.generativeai as genai
